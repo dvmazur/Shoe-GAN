@@ -1,0 +1,3 @@
+# Shoe-GAN
+A project made at GoToCamp, in sake of lulz and education...
+
