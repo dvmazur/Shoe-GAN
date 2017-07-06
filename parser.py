@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 
 def parse_links(base_link, max_prods):
     pic_links = list()
-    PAGE_PARAM = "?page="
     LIMIT_PARAM = "?limit="
 
     page_html = request.urlopen(base_link + LIMIT_PARAM + str(max_prods))
@@ -30,7 +29,3 @@ def link_to_pick(links, save_dir):
                     break
 
                 handle.write(block)
-
-def parse_shoes(link, max_prods, save_dir):
-    pic_link = parse_links(link, max_prods, save_dir)
-    link_to_pick(pic_link, save_dir)
